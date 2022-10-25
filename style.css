@@ -1,0 +1,25 @@
+.box-circle svg{
+    width: 70px;
+    height: 70px;
+
+}
+
+circle{
+    width: 15px;
+    height: 15px;
+    fill:none;
+    stroke: black;
+    stroke-width: 10;
+    transform: translate(5px,5px);
+    stroke-dasharray: 440;
+
+}
+
+circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: rgb(102,102, 102);
+}
+circle:nth-child(2){
+    transition: stroke-dashoffset 0.08s;
+    stroke: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(253,232,29,1) 50%, rgba(29,253,42,1) 100%);
+}
